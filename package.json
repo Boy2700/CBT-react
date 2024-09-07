@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Boy2700.github.io/CBT-react",
   "name": "CCTI-CBT",
   "version": "0.1.0",
   "private": true,
@@ -16,19 +17,25 @@
     "react-typing-animation": "^1.4.0",
     "typeface-roboto": "^0.0.54"
   },
+  
   "engines": {
     "node": "12.18.3",
     "npm": "6.5.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
-  },
+ "scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+
+ },
   "description": "A computer based test for CCTI",
   "main": "index.js",
   "author": "Gabriel Aniora <chybesta@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
