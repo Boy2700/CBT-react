@@ -44,6 +44,5 @@ Follow the steps below to get the project running locally:
 ## Contributing
 If you want to contribute to this project, please submit a pull request.
 
-## License
-Specify your project’s license if any.
+
 ```
